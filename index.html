@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>js date review</title>
+	
+	<style>
+		.label >*,.time>*,.dates >*{width:70px}
+		#dates,#time{
+			border:solid 1px gray;
+		}
+		.white{
+			border:1px solid white;
+			padding:5px;
+			font-weight:bold;
+		}
+		.label{
+			display:flex;
+			justify-content:space-around;
+			text-align:center;
+		}
+		.red{
+			text-align:center;
+			color:red;
+			font-size:60px;
+			display:flex;
+			justify-content:space-around;
+		}
+		#digital-clock{
+			margin:100px auto;
+			width:600px;
+			background:black;
+			color:white;
+			padding:10px;
+		}
+		input:checked {accent-color:red}
+		.input,.temp{text-align:center}
+		.temp-value{
+			color:red;
+			font-size:40px
+		}
+		.row{
+			display:flex;
+			justify-content:center;
+			align-items:center
+		}
+		.temp,.right{width:100%;text-align:right}
+	
+	
+	</style>
+	
+</head>
+<body>
+	<div id="digital-clock">
+		<div class = "white">
+			<div class="label">
+				<div>DATE</div> 
+				<div>MONTH</div> 
+				<div>YEAR</div>
+			</div>
+			<div id ="dates" class = "red">
+				<div id ="date"></div>
+				<div id ="month"></div>
+				<div id ="year"></div>
+			</div>
+			<div class="label">
+				<div>HOUR</div>
+				<div> MINUTE</div>
+				<div> SECOUND</div>
+			</div>
+			<div id ="time" class = "red">
+				<div id ="hour"></div>
+				<div id ="mins"></div>
+				<div id ="secs"></div>
+			</div>
+			<p class ="input">
+				<label><input class="day" name="day"type= "radio">SUN</label>
+				<label><input class="day" name="day" type= "radio">MON</label>
+				<label><input class="day" name="day" type= "radio">TUE</label>
+				<label><input class="day" name="day" type= "radio">WED</label>
+				<label><input class="day" name="day" type= "radio">THU</label>
+				<label><input class="day" name="day" type= "radio">FRI</label>
+				<label><input class="day" name="day" type= "radio">SAT</label>
+			</p>
+			<div class="row">
+					<p class ="temp"> TEMP <span class="temp-value"> 29</span></p>
+					<div class="right">
+						<div><label><input class ="meridian" name="meridian" type= "radio">AM</label></div>
+						<div><label><input class ="meridian" name="meridian" type= "radio">PM</label></div>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<script src="js/main.js"></script>
+			
+</body>
+
+</html>
